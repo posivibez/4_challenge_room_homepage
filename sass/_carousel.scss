@@ -1,0 +1,65 @@
+.carousel {
+    overflow: hidden;
+    max-width: 600px;
+    position: relative;
+
+    &__item,
+    &__item--hidden {
+        display: none;
+    }
+
+    &__item {
+
+        & img {
+            max-width: 600px;
+            width: 100%;
+            height: auto;
+        }
+
+        &--visible {
+            display: block;
+            animation: fadeVisibility 0.5s;
+        }
+    }
+
+    &__actions {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+
+        & button {
+            border-radius: 50%;
+            width: 5rem;
+            height: 5rem;
+            border: 0;
+            padding: 1rem;
+            font-size: 2rem;
+            font-weight: 700;
+            opacity: .8;
+            cursor: pointer;
+
+            &#carousel__button--previous {
+                margin-left: 2rem;
+            }
+
+            &#carousel__button--next {
+                margin-right: 2rem;
+            }
+        }
+
+
+    }
+}
+
+@keyframes fadeVisibility {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+        transform: opacity linear;
+    }
+}

@@ -1,0 +1,50 @@
+// COLOR VARIABLES
+$color-dark-gray:hsl(0, 0%, 63%);
+$color-black:hsl(0, 0%, 0%);
+$color-white:hsl(0, 0%, 100%);
+$color-verydarkgray:hsl(0, 0%, 27%);
+
+// FONT VARIABLES
+$font-primary: 'Kumbh Sans', sans-serif;
+
+//RESPONSIVE VARIABLES
+$bp-desktop: 90em; //1440px
+$bp-mobile: 25em; //375px
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+
+    @media only screen and (max-width: $bp-mobile) {
+        font-size: 50%;
+
+    }
+
+}
+
+body {
+    background-color: $color-white;
+    font-size: 1.6rem;
+    font-family: 'Spartan', sans-serif;
+    color: $color-dark-gray;
+}
+
+// .container {
+
+//     height: 100vh;
+//     width: 100%;
+//     overflow: hidden;
+//     position: relative;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+    
+// }
