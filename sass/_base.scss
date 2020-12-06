@@ -9,6 +9,8 @@ $font-primary: 'Kumbh Sans', sans-serif;
 
 //RESPONSIVE VARIABLES
 $bp-desktop: 90em; //1440px
+$bp-desktop-sm: 75em; //1200px
+$bp-tablet: 50em; //800px
 $bp-mobile: 25em; //375px
 
 *,
@@ -23,9 +25,12 @@ html {
     box-sizing: border-box;
     font-size: 62.5%;
 
+    @media only screen and (max-width: $bp-desktop-sm) {
+        font-size: 50%;
+    }
+
     @media only screen and (max-width: $bp-mobile) {
         font-size: 50%;
-
     }
 
 }
@@ -94,7 +99,19 @@ body {
             }
         }
     }
+}
 
-
+//UTILITY CLASSES
+.bp_desktop_hide { //anything above tablet width HIDE element
+    @media only screen and (min-width: $bp-tablet) {
+        display: none;
+    }
     
+}
+
+
+.bp_tablet_hide { //anything below tablet width HIDE element
+    @media only screen and (max-width: $bp-tablet) {
+        display: none;
+    }
 }

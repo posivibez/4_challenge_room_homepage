@@ -6,11 +6,21 @@ const textDetails = document.getElementsByClassName('carousel__txt__item');
 const totalSlides = slides.length;
 const totalDetails = textDetails.length;
 
-document.getElementById('carousel__button--next').addEventListener("click", function(){
+//Find Button element at desktop to trigger slide movement functions
+document.getElementById('carousel__button--desktop--next').addEventListener("click", function(){
     moveToNextSlide();
 });
 
-document.getElementById('carousel__button--previous').addEventListener("click", function(){
+document.getElementById('carousel__button--desktop--previous').addEventListener("click", function(){
+    moveToPreviousSlide();
+});
+
+//Find Button element at mobile to trigger slide movement functions
+document.getElementById('carousel__button--mobile--next').addEventListener("click", function(){
+    moveToNextSlide();
+});
+
+document.getElementById('carousel__button--mobile--previous').addEventListener("click", function(){
     moveToPreviousSlide();
 });
 
