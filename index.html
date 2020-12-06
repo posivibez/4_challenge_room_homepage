@@ -35,13 +35,47 @@
 
       <div class="carousel">
         <div class="carousel__item carousel__item--visible">
-          <img src="/images/desktop-image-hero-1.jpg" alt="table and chair">
+
+          <picture>
+            <source 
+               media="(min-width: 600px)"
+               srcset="/images/desktop-image-hero-1.jpg">
+            <source 
+               media="(max-width: 600px)"
+               srcset="/images/mobile-image-hero-1.jpg">
+               <img src="/images/desktop-image-hero-1.jpg" alt="table and chair">
+         </picture>
+
+          
         </div>
+
         <div class="carousel__item">
-          <img src="/images/desktop-image-hero-2.jpg" alt="chairs">
+
+          <picture>
+            <source 
+               media="(min-width: 600px)"
+               srcset="/images/desktop-image-hero-2.jpg">
+            <source 
+               media="(max-width: 600px)"
+               srcset="/images/mobile-image-hero-2.jpg">
+               <img src="/images/desktop-image-hero-2.jpg" alt="table and chair">
+         </picture>
+
+          
         </div>
+
         <div class="carousel__item">
-          <img src="/images/desktop-image-hero-3.jpg" alt="chair">
+          
+          <picture>
+            <source 
+               media="(min-width: 600px)"
+               srcset="/images/desktop-image-hero-3.jpg">
+            <source 
+               media="(max-width: 600px)"
+               srcset="/images/mobile-image-hero-3.jpg">
+               <img src="/images/desktop-image-hero-3.jpg" alt="table and chair">
+         </picture>
+        
         </div>
       </div>
 
