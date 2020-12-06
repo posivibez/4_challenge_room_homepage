@@ -7,7 +7,7 @@
 
     @media only screen and (max-width: $bp-tablet) {
         grid-template-columns: 100vw;
-        grid-template-rows: max-content max-content 50vh max-content 40vh;
+        grid-template-rows: repeat(5, max-content);
     }
 
 }
@@ -47,6 +47,11 @@
             & img {
                 min-height: 100%;
                 min-width: 100%;
+
+                @media only screen and (max-width: $bp-tablet) {
+                    height: 100%;
+                    width: 100%; 
+                }
                 
             }
         }
