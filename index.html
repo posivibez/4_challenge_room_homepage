@@ -23,7 +23,49 @@
     <!-- ******************** ROW 1 COLUMN 1 ******************** -->
     <div class="box__1-1">
 
-      <nav class="navigation__container">
+      <!-- POPUP NAV FOR MOBILE -->
+      <div class="popup" id="popup">
+        <nav class="popup__nav">
+
+
+          <div class="popup__nav--icon">
+            <a href="#homecarousel" class="popup__clickclose">
+              <span>
+                <object data="/images/icon-close.svg" type="image/svg+xml">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24"></svg>
+                </object>
+              </span>
+            </a>
+          </div>
+          
+
+          <div class="popup__nav--links">
+            <a href="#" class="popup__nav--item">home</a>
+            <a href="#" class="popup__nav--item">shop</a>
+            <a href="#" class="popup__nav--item">about</a>
+            <a href="#" class="popup__nav--item">contact</a>
+          </div>
+
+
+
+        </nav>
+      </div>
+
+
+      <!-- NAV HAMBURGER ICON FOR MOBILE -->
+      <div class="navigation__container--mobile">
+        <a href="#popup">
+          <span>
+            <object data="/images/icon-hamburger.svg" type="image/svg+xml">
+              <svg xmlns="http://www.w3.org/2000/svg"></svg>
+            </object>
+          </span>
+
+        </a>
+      </div>
+
+      <!-- NAV FOR DESKTOP SITE -->
+      <nav class="navigation__container navigation__container--desktop">
         <img src="/images/logo.svg" alt="room logo">
 
         <a href="#">home</a>
@@ -33,49 +75,37 @@
 
       </nav>
 
-      <div class="carousel">
+      <div class="carousel" id="homecarousel">
         <div class="carousel__item carousel__item--visible">
 
           <picture>
-            <source 
-               media="(min-width: 600px)"
-               srcset="/images/desktop-image-hero-1.jpg">
-            <source 
-               media="(max-width: 600px)"
-               srcset="/images/mobile-image-hero-1.jpg">
-               <img src="/images/desktop-image-hero-1.jpg" alt="table and chair">
-         </picture>
+            <source media="(min-width: 600px)" srcset="/images/desktop-image-hero-1.jpg">
+            <source media="(max-width: 600px)" srcset="/images/mobile-image-hero-1.jpg">
+            <img src="/images/desktop-image-hero-1.jpg" alt="table and chair">
+          </picture>
 
-          
+
         </div>
 
         <div class="carousel__item">
 
           <picture>
-            <source 
-               media="(min-width: 600px)"
-               srcset="/images/desktop-image-hero-2.jpg">
-            <source 
-               media="(max-width: 600px)"
-               srcset="/images/mobile-image-hero-2.jpg">
-               <img src="/images/desktop-image-hero-2.jpg" alt="table and chair">
-         </picture>
+            <source media="(min-width: 600px)" srcset="/images/desktop-image-hero-2.jpg">
+            <source media="(max-width: 600px)" srcset="/images/mobile-image-hero-2.jpg">
+            <img src="/images/desktop-image-hero-2.jpg" alt="table and chair">
+          </picture>
 
-          
+
         </div>
 
         <div class="carousel__item">
-          
+
           <picture>
-            <source 
-               media="(min-width: 600px)"
-               srcset="/images/desktop-image-hero-3.jpg">
-            <source 
-               media="(max-width: 600px)"
-               srcset="/images/mobile-image-hero-3.jpg">
-               <img src="/images/desktop-image-hero-3.jpg" alt="table and chair">
-         </picture>
-        
+            <source media="(min-width: 600px)" srcset="/images/desktop-image-hero-3.jpg">
+            <source media="(max-width: 600px)" srcset="/images/mobile-image-hero-3.jpg">
+            <img src="/images/desktop-image-hero-3.jpg" alt="table and chair">
+          </picture>
+
         </div>
       </div>
 
@@ -86,8 +116,8 @@
           <object data="/images/icon-angle-left.svg" type="image/svg+xml">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24"></svg>
           </object>
-        </button><!-- odd white space occuring here in browser if linebreak here?!--><button id="carousel__button--desktop--next"
-          aria-label="Next Button">
+        </button><!-- odd white space occuring here in browser if linebreak here?!--><button
+          id="carousel__button--desktop--next" aria-label="Next Button">
           <object data="/images/icon-angle-right.svg" type="image/svg+xml">
             <svg xmlns="http://www.w3.org/2000/svg" width="14" height="24"></svg>
           </object>
