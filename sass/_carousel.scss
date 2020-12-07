@@ -29,6 +29,10 @@
         &__item {
             padding: 9rem;
 
+            @media only screen and (max-width: $bp-tablet) {
+                padding: 8rem;
+            }
+
             &--innerContainer {
                 height: 100%;
                 display: grid;

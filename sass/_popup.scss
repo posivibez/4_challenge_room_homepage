@@ -47,7 +47,7 @@
 
         &--icon {
             margin-right: auto;
-            margin-left: 3rem;
+            margin-left: 8rem; 
         }
 
         //GRID FOR LINKS
@@ -55,7 +55,7 @@
             display: grid;
             grid-template-columns: repeat(4, max-content);
             grid-gap: 3rem;
-            margin-right: 3rem;
+            margin-right: 8rem;
         }
 
         &--item {
