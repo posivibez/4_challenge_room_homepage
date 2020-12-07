@@ -17,33 +17,33 @@ body {
 
 .navigation__container, .navigation__container--mobile {
   position: absolute;
-  top: 10%;
-  left: 10%;
   z-index: 2;
   color: white;
   display: grid;
   align-items: center; }
 
 .navigation__container {
+  top: 10%;
+  left: 10%;
   grid-template-columns: repeat(5, max-content);
   grid-gap: 3rem; }
   @media only screen and (max-width: 50em) {
     .navigation__container--desktop {
       display: none; } }
   .navigation__container--mobile {
+    top: 0;
+    left: 0;
+    width: 100vw;
+    padding: 4rem 8rem;
     grid-template-columns: max-content; }
     @media only screen and (min-width: 50em) {
       .navigation__container--mobile {
         display: none; } }
-    .navigation__container--mobile a {
-      display: inline-block;
-      position: relative;
-      z-index: 5; }
-    .navigation__container--mobile span {
-      display: inline-block; }
-    .navigation__container--mobile object {
-      position: relative;
-      z-index: -1; }
+    .navigation__container--mobile--img-container {
+      position: absolute;
+      top: 4rem;
+      left: 50%;
+      transform: translateX(-50%); }
   .navigation__container img {
     margin-right: 2rem; }
   .navigation__container a {
