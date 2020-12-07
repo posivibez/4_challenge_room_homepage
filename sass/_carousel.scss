@@ -69,13 +69,9 @@
 
                 &:hover {
                     color: $color-dark-gray;
-
-                    /* COULDNT GET THIS WORKING TO FILL THE SVG WITH DIFFERENT COLOR ON HOVER?
-                    THE SCSS IS TARGETING THE RIGHT ITEM BG COLOR WORKS NOT SURE WHY FILL NOT WORKING
-                    & object {
-                        fill: red;
+                    & svg * {
+                        fill: $color-dark-gray;
                     }
-                    */
                 }
                 
             }

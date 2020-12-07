@@ -179,13 +179,9 @@ body {
       font-size: 1.5rem;
       letter-spacing: 1rem; }
     .carousel__txt__item a:hover {
-      color: #a1a1a1;
-      /* COULDNT GET THIS WORKING TO FILL THE SVG WITH DIFFERENT COLOR ON HOVER?
-                    THE SCSS IS TARGETING THE RIGHT ITEM BG COLOR WORKS NOT SURE WHY FILL NOT WORKING
-                    & object {
-                        fill: red;
-                    }
-                    */ }
+      color: #a1a1a1; }
+      .carousel__txt__item a:hover svg * {
+        fill: #a1a1a1; }
   .carousel__item img {
     min-width: 100%;
     min-height: 100%; }
