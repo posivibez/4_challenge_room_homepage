@@ -26,7 +26,7 @@ body {
   top: 10%;
   left: 10%;
   grid-template-columns: repeat(5, max-content);
-  grid-gap: 3rem; }
+  grid-gap: 4rem; }
   @media only screen and (max-width: 50em) {
     .navigation__container--desktop {
       display: none; } }
@@ -45,12 +45,13 @@ body {
       left: 50%;
       transform: translateX(-50%); }
   .navigation__container img {
-    margin-right: 2rem; }
+    margin-right: 3rem; }
   .navigation__container a {
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
-    font-weight: 400; }
+    font-size: 1.5rem;
+    font-weight: 500;
+    transform: translateY(3px); }
     .navigation__container a:hover::after {
       transform: scale(1); }
     .navigation__container a::after {
