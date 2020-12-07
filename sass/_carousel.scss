@@ -27,13 +27,13 @@
         }
 
         &__item {
-            padding: 8rem;
+            padding: 9rem;
 
             &--innerContainer {
                 height: 100%;
                 display: grid;
                 grid-template-rows: repeat(3, max-content);
-                grid-gap: 2.5rem;
+                grid-gap: 3rem;
                 align-content: center;
             }
  
@@ -41,8 +41,8 @@
 
             &--heading {
                 color: $color-black;
-                font-size: 4rem;
-                font-weight: 600;
+                font-size: 5rem;
+                font-weight: 700;
                 line-height: 1.2;
 
             }

@@ -23,15 +23,15 @@ $bp-mobile: 25em; //375px
 
 html {
     box-sizing: border-box;
-    font-size: 62.5%;
+    font-size: 50%; 
 
-    @media only screen and (max-width: $bp-desktop-sm) {
-        font-size: 50%;
-    }
+    // @media only screen and (max-width: $bp-desktop-sm) {
+    //     font-size: 50%;
+    // }
 
-    @media only screen and (max-width: $bp-mobile) {
-        font-size: 50%;
-    }
+    // @media only screen and (max-width: $bp-mobile) {
+    //     font-size: 50%;
+    // }
 
 }
 
