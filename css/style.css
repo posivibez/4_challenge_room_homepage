@@ -50,7 +50,7 @@ body {
     text-decoration: none;
     color: white;
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 700;
     transform: translateY(3px); }
     .navigation__container a:hover::after {
       transform: scale(1); }
@@ -248,15 +248,6 @@ body {
     transform: scaleY(0);
     transform-origin: top;
     transition: all .3s .1s; }
-    .popup__nav a {
-      display: inline-block;
-      position: relative;
-      z-index: 5; }
-    .popup__nav span {
-      display: inline-block; }
-    .popup__nav object {
-      position: relative;
-      z-index: -1; }
     .popup__nav--icon {
       margin-right: auto;
       margin-left: 8rem; }
